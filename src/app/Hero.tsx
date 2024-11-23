@@ -10,6 +10,7 @@ import { Section, Container } from "@/components/craft";
 // Asset imports
 import { RevealFx } from "@/components/once-ui/RevealFx/RevealFx";
 import { SparkleFx } from "@/components/once-ui/SparkleFx/SparkleFx";
+import { LetterFx } from "@/components/once-ui/LetterFx/LetterFx";
 
 const Hero = () => {
     return (
@@ -17,25 +18,20 @@ const Hero = () => {
             <RevealFx>
                 <Container>
                     <div className="text-center">
-
-                        <h1 className="text-6xl md:text-8xl font-bold text-slate-50">
-
+                        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-white bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
                             <Balancer>
                                 {/* <SparkleFx
                                     speed="slow"
                                     count={50}
                                 > */}
-                                    Passionate Developper
+                                Salim Mouttaki
                                 {/* </SparkleFx> */}
-
                             </Balancer>
-
-                        </h1>
-                        <h3 className="text-muted-foreground mt-4">
+                        </span>
+                        <h3 className="text-muted-foreground mt-4 md:text-2xl">
                             <Balancer>
-                                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Software Engineering Student & Freelance Developer
+                                Turning Ideas into Digital Reality
                             </Balancer>
                         </h3>
                     </div>
