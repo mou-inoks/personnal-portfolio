@@ -9,23 +9,21 @@ import { Section, Container } from "@/components/craft";
 
 // Asset imports
 import { RevealFx } from "@/components/once-ui/RevealFx/RevealFx";
-import { SparkleFx } from "@/components/once-ui/SparkleFx/SparkleFx";
-import { LetterFx } from "@/components/once-ui/LetterFx/LetterFx";
+import { Spotlight } from "@/components/aceternity/Spotlight";
 
 const Hero = () => {
     return (
         <Section className="flex items-start justify-center min-h-screen pt-16">
+            <Spotlight
+                className="-top-40 left-0 md:left-60 md:-top-20"
+                fill="white"
+            />
             <RevealFx>
                 <Container>
-                    <div className="text-center">
+                    <div className="text-center top-9">
                         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-white bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
                             <Balancer>
-                                {/* <SparkleFx
-                                    speed="slow"
-                                    count={50}
-                                > */}
                                 Salim Mouttaki
-                                {/* </SparkleFx> */}
                             </Balancer>
                         </span>
                         <h3 className="text-muted-foreground mt-4 md:text-2xl">
